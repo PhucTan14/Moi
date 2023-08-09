@@ -1,10 +1,10 @@
 //sile hinh chay
 var arr_hinh=[
-    "/PICTURE/1.jpg",
-    "/PICTURE/2.jpg",
-    "/PICTURE/3.jpg",
-    "/PICTURE/4.jpg",
-    "/PICTURE/5.jpg",
+    "../PICTURE/1.jpg",
+    "../PICTURE/2.jpg",
+    "../PICTURE/3.jpg",
+    "../PICTURE/4.jpg",
+    "../PICTURE/5.jpg",
 ]
 
 var index = 1;
@@ -25,9 +25,9 @@ setInterval("next()",3000);
 
 //sile hinh thu vien anh
 var arr_chuyenanh=[
-    "/PICTURE/NoiDung26.jpg",
-    "/PICTURE/NoiDung25.jpg",
-    "/PICTURE/NoiDung22.jpg",
+    "../PICTURE/NoiDung26.jpg",
+    "../PICTURE/NoiDung25.jpg",
+    "../PICTURE/NoiDung22.jpg",
 ]
 var dem = 0;
 function chuyenanh(){
@@ -39,9 +39,9 @@ function chuyenanh(){
 setInterval("chuyenanh()", 4800);
 
 var arr_chuyenanh2=[
-    "/PICTURE/NoiDung17.jpg",
-    "/PICTURE/NoiDung23.jpg",
-    "/PICTURE/NoiDung24.jpg",
+    "../PICTURE/NoiDung17.jpg",
+    "../PICTURE/NoiDung23.jpg",
+    "../PICTURE/NoiDung24.jpg",
 ]
 var cnt = 0;
 function chuyenanh2(){
