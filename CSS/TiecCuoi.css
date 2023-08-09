@@ -1,0 +1,81 @@
+/*Phan Noi Dung 1*/
+
+.nda{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nda>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nda::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0.5, 0.5);
+}
+
+.nda0>h3{
+    text-align: center;
+    position: relative;
+    top: -305px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(125, 226, 240)
+}
+/* Phan Noi Dung 2 */
+.ndb{
+    margin-top: -100px;
+}
+.ndb0{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+}
+.ndb1{
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.ndb1>h4{
+    color: goldenrod;
+    font-size: 35px;
+    margin: 0;
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 5px;
+}
+
+.ndb1>p{
+    color: #4e402d;
+    font-size: 20px;
+}
+
+.ndb2{
+    width: 600px;
+    height: 300px;
+}
+
+img{
+    width: 100%;
+}
+
+.zoom {
+    transition: all 0.5s ease;
+    border-radius: 20px ;
+}
+
+.zoom:hover {
+    transform: scale(0.9); 
+}

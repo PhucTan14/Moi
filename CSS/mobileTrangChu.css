@@ -1,0 +1,157 @@
+body {
+    background-color: lightblue;
+}
+
+/*header*/
+div.right
+{
+    display: none;
+}
+.centerhead
+{
+    justify-content: flex-start;
+}
+/*menu*/
+.logo > a > img{
+   margin-left: 20px;
+}
+.close{
+    display: block;
+}
+.logo{
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    z-index: 999;
+    left: -100%;
+    /*right: 50*/
+    background-color: rgb(9, 22, 18);
+    transition: left 1s;
+}
+.menu{
+    flex-direction: column;
+}
+nav{
+    left: 0;
+}
+.show-nav{
+    display: block;
+}
+
+/* Noi Dung 1*/
+.a {
+    width: 85%;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.a0{
+    margin-top: 5px;
+}
+
+.a78 > h2{
+    margin-top: 55px;
+}
+
+.a1 > h2 {
+    font-size: 18px; /* Giảm kích thước font h2 */
+}
+
+.a1 > p {
+    font-size: 13px; /* Giảm kích thước font p */
+}
+
+.a2>img{
+    border-radius: 20px;
+}
+.a3>img{
+    border-radius: 20px;
+}
+
+.a2,
+.a3{
+    width: 49%; 
+    height: 80px;
+    margin-top: 10px;
+}
+.a3{
+    margin-bottom: 45px;
+}
+
+.ChiTiet > a{
+    font-size: 10px;
+    padding: 0.4rem;
+}
+
+/*Noi Dung 2*/
+.b0 {
+    width: 95%; /* Giảm chiều rộng phần tử .b0 */
+}
+
+.b1 {
+    width: 100%; /* Giảm chiều rộng .b1 để căn theo chiều rộng của .b0 */
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách giữa các phần tử .b1 */
+    height: 300px;
+}
+
+.b1 > div.overlay .text {
+    font-size: 18px; /* Giảm kích thước font .text */
+}
+
+.b1 > div.overlay .text-hover {
+    font-size: 16px; /* Giảm kích thước font .text-hover */
+}
+/*Phan noi dung 3*/
+.c0{
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+.c1>img{
+    width: 100%;
+}
+/*phan noi dung 4*/
+.d0{
+    width: 95%;
+}
+.d1{
+    width: 45%;
+}
+
+.d1>img{
+    width: 100%;
+}
+
+.cao1{
+    height: 150px;
+}
+
+/*Footer*/
+.container {
+    max-width: 100%;
+}
+.foot-col>h4 {
+    font-size: 10px;
+    margin-bottom: 15px;  
+}
+.foot-col>h4::before {
+    height: 2px;
+    width: 40px;
+} 
+.foot-col> ul > li >a {
+    margin-left: -35px;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 20px;
+}
+.wrapper .icon {
+    margin: 0 2px;
+}
+.wrapper .icon> span {
+    height: 10px;
+    width: 15px;
+    border-radius: 50px;
+}
+
+
