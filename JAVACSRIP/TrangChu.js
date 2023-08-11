@@ -70,7 +70,6 @@ window.onload = function(){
 }
 
 
-
 window.onscroll = function () {
     console.info(document.documentElement.scrollTop);
     var gototop = document.getElementById("gototop");
@@ -93,26 +92,30 @@ function goToTop() {
 }
 
 
-var img1 = document.getElementById("SK");
-img1.addEventListener("click", function() {
-        window.location.href = "SuKien.html";
-});
-var img2 = document.getElementById("Tiec");
-img2.addEventListener("click", function() {
-        window.location.href = "TiecOutside.html";
-});
-var img3 = document.getElementById("UD");
-img3.addEventListener("click", function() {
-        window.location.href = "Uudai.html";
-});
-var img4 = document.getElementById("DT");
-img4.addEventListener("click", function() {
-        window.location.href = "Khampha.html";
-});
 
+/*Doc json */
+function LoadCates(){
+    fetch("../JSON/NoiDung2.json").then(res => res.json()).then(data => {
+        let h ="";
+        for(let p of data)
+        h += `
+    <div class="b1">
+        <div class="overlay">
+            <a href="#" id="${p.id}">
+                <img src="${p.image}" >
+                <div class="text">${p.name}</div>
+                <div class="text-hover"> ${p.text}</div>
+            </a>
+        </div>
+    </div>
+        `;
+        let d = document.getElementById("noidung");
+        d.innerHTML = h;
+    })
+}
 
-
-
-
+window.onload = function(){
+    LoadCates();
+}
 
 

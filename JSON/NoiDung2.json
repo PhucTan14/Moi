@@ -1,0 +1,26 @@
+[
+    {
+        "id": "SK",
+        "name": "SỰ KIỆN 1",
+        "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
+        "image": "../PICTURE/NoiDung5.png"
+    },
+    {
+        "id": "Tiec",
+        "name": "TIỆC OUTSIDE",
+        "text": "Không chỉ phù hợp cho các loại hình tiệc trong khuôn khổ lồng kính tại trung tâm, chúng tôi còn là ĐỘI NGŨ KINH NGHIỆM tác chiến cho các loại hình tiệc outside bên ngoài. Với động ngũ là các chuyên gia năm sao hoàn toàn mang đến cho khách hàng sự CHUẨN MỰC TUYỆT ĐỐI trong từng sự kiện ngoài trời.",
+        "image": "../PICTURE/NoiDung7.jpg"
+    },
+    {
+        "id": "UD",
+        "name": "ƯU ĐÃI",
+        "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
+        "image": "../PICTURE/NoiDung9.jpg"
+    },
+    {
+        "id": "DT",
+        "name": "KHÁM PHÁ",
+        "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
+        "image": "../PICTURE/NoiDung11.jpg"
+    }
+]
