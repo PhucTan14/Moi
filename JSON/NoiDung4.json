@@ -1,0 +1,28 @@
+[
+    {
+        "image1": "../PICTURE/NoiDung16.jpg",
+        "id1": "Thap1",
+        "image2": "../PICTURE/NoiDung15.jpg",
+        "id2":"cao1"
+    },
+    {
+        "image1": "../PICTURE/NoiDung17.jpg",
+        "id1": "cao1",
+        "image2": "../PICTURE/NoiDung16.jpg",
+        "id2":"Thap1",
+        "id3":"picture"
+    },
+    {
+        "image1": "../PICTURE/NoiDung27.jpg",
+        "id1": "Thap1",
+        "image2": "../PICTURE/NoiDung18.jpg",
+        "id2":"cao1",
+        "id4":"img2"
+    },
+    {
+        "image1": "../PICTURE/NoiDung19.jpg",
+        "id1": "cao1",
+        "image2": "../PICTURE/NoiDung20.jpg",
+        "id2":"Thap1"
+    }
+]

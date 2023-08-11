@@ -6,7 +6,6 @@ var arr_hinh=[
     "../PICTURE/4.jpg",
     "../PICTURE/5.jpg",
 ]
-
 var index = 1;
 function next(){
     index++;
@@ -39,7 +38,7 @@ function chuyenanh(){
 setInterval("chuyenanh()", 4800);
 
 var arr_chuyenanh2=[
-    "../PICTURE/NoiDung17.jpg",
+    "../PICTURE/NoiDung15.jpg",
     "../PICTURE/NoiDung23.jpg",
     "../PICTURE/NoiDung24.jpg",
 ]
@@ -51,24 +50,6 @@ function chuyenanh2(){
     img2.src = arr_chuyenanh2[cnt];
 }
 setInterval("chuyenanh2()", 5900);
-
-
-window.onload = function(){
-    let m= document.getElementById("main");
-    let d = document.querySelector(".show-nav");
-    d.addEventListener("click",function(){
-        m.style.right = "50%";
-        m.style.left = 0;
-    });
-
-    let c = document.querySelector(".close");
-    c.addEventListener("click",function(){
-        m.style.right = "unset";
-        m.style.left = "-100%";
-    });
-
-}
-
 
 window.onscroll = function () {
     console.info(document.documentElement.scrollTop);
@@ -101,7 +82,7 @@ function LoadCates(){
         h += `
     <div class="b1">
         <div class="overlay">
-            <a href="#" id="${p.id}">
+            <a href="${p.link}" id="${p.id}">
                 <img src="${p.image}" >
                 <div class="text">${p.name}</div>
                 <div class="text-hover"> ${p.text}</div>
@@ -114,8 +95,57 @@ function LoadCates(){
     })
 }
 
+
+function LoadCates2(){
+    fetch("../JSON/NoiDung3.json").then(res => res.json()).then(data => {
+        let h3 ="";
+        for(let p3 of data)
+        h3 += `
+    <div class="c1">
+        <img src="${p3.image}" alt="">
+        <h4>${p3.name}</h4>
+        <p>${p3.text}</p>
+    </div>
+        `;
+        let d = document.getElementById("noidung3");
+        d.innerHTML = h3;
+    })
+}
+
+function LoadCates3(){
+    fetch("../JSON/NoiDung4.json").then(res => res.json()).then(data => {
+        let h4 ="";
+        for(let p4 of data)
+        h4 += `
+    <div class="d1">
+        <img id="${p4.id3}" src="${p4.image1}" alt="" class="${p4.id1}">
+        <img id="${p4.id4}" src="${p4.image2}" alt="" class="${p4.id2}">
+    </div>
+        `;
+        let d = document.getElementById("noidung4");
+        d.innerHTML = h4;
+    })
+}
+
+
+
+
 window.onload = function(){
     LoadCates();
+    LoadCates2();
+    LoadCates3();
+    let m= document.getElementById("main");
+    let d = document.querySelector(".show-nav");
+    d.addEventListener("click",function(){
+        m.style.right = "50%";
+        m.style.left = 0;
+    });
+
+    let c = document.querySelector(".close");
+    c.addEventListener("click",function(){
+        m.style.right = "unset";
+        m.style.left = "-100%";
+    });
 }
 
 

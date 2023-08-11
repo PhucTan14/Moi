@@ -1,6 +1,7 @@
 [
     {
         "id": "SK",
+         "link":"../HTML/SuKien.html",
         "name": "SỰ KIỆN 1",
         "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
         "image": "../PICTURE/NoiDung5.png"
