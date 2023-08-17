@@ -114,6 +114,7 @@ nav{
 /*phan noi dung 4*/
 .d0{
     width: 95%;
+    margin-bottom: -40px;
 }
 .d1{
     width: 45%;
@@ -123,10 +124,10 @@ nav{
     width: 100%;
 }
 .Thap1{
-    height: 50px;
+    height: 70px;
 }
 .cao1{
-    height: 150px;
+    height: 170px;
 }
 
 /*Footer*/

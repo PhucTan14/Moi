@@ -2,26 +2,29 @@
     {
         "id": "SK",
          "link":"../HTML/SuKien.html",
-        "name": "SỰ KIỆN 1",
+        "name": "SỰ KIỆN",
         "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
         "image": "../PICTURE/NoiDung5.png"
     },
     {
         "id": "Tiec",
+        "link":"../HTML/TiecOutside.html",
         "name": "TIỆC OUTSIDE",
-        "text": "Không chỉ phù hợp cho các loại hình tiệc trong khuôn khổ lồng kính tại trung tâm, chúng tôi còn là ĐỘI NGŨ KINH NGHIỆM tác chiến cho các loại hình tiệc outside bên ngoài. Với động ngũ là các chuyên gia năm sao hoàn toàn mang đến cho khách hàng sự CHUẨN MỰC TUYỆT ĐỐI trong từng sự kiện ngoài trời.",
+        "text": "Không chỉ phù hợp cho các loại hình tiệc trong khuôn khổ lồng kính tại trung tâm, chúng tôi còn là ĐỘI NGŨ KINH NGHIỆM tác chiến cho các loại hình tiệc outside bên ngoài.",
         "image": "../PICTURE/NoiDung7.jpg"
     },
     {
         "id": "UD",
+        "link":"../HTML/Uudai.html",
         "name": "ƯU ĐÃI",
-        "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
+        "text": "TRỌN GÓI TIỆC CƯỚI MÙA HÈ CHỈ VỚI 4,800,000VND/BÀN VÀ HƠN THẾ NỮA[...]",
         "image": "../PICTURE/NoiDung9.jpg"
     },
     {
         "id": "DT",
+        "link":"../HTML/Khampha.html",
         "name": "KHÁM PHÁ",
-        "text": "Được thiết kế như LÂU ĐÀI HOÀNG GIA, với lối kiến trúc thích hợp với các loại hình sự kiện trong đó có CÁC SỰ KIỆN CÁ NHÂN KHÁC NHAU [...]",
+        "text": "Địa điểm xứng tầm cho những sự kiện đỉnh cao tầm vóc quốc tế và đẳng cấp",
         "image": "../PICTURE/NoiDung11.jpg"
     }
 ]

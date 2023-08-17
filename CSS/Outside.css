@@ -124,6 +124,7 @@ ul.menu>li>a:hover{
 }
 .c1 >img {
     width: 100%;
+    border-radius: 10px;
     
 }
 .b1 {
@@ -411,3 +412,15 @@ div.gototop a {
 .social a:nth-child(2) i {
     color: #0033cc;
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+} 

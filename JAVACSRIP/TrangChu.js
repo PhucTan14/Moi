@@ -64,7 +64,7 @@ window.onscroll = function () {
 
 function goToTop() {
     var timer = setInterval(function() {
-        document.documentElement.scrollTop-=10;
+        document.documentElement.scrollTop-=15;
 
         if(document.documentElement.scrollTop <= 0) {
             clearInterval(timer);
@@ -94,7 +94,53 @@ function LoadCates(){
         d.innerHTML = h;
     })
 }
+function LoadCates0(){
+    fetch("../JSON/NoiDung0.json").then(res => res.json()).then(data => {
+        let h0 ="";
+        for(let p0 of data)
+        h0 += `
+        <div class="a2">
+            <img src="${p0.image1}" alt="ND1">
+        </div>
+        <div class="a3">
+            <img src="${p0.image2}" alt="ND2">
+        </div>
+        <div class="a1 a78">
+            <h2>${p0.name}</h2>
+            <p>${p0.text}</p>
+            <div class="ChiTiet">
+                <a href="${p0.link}">${p0.text1}</a>
+            </div>                
+        </div>
+        `;
+        let c = document.getElementById("noidung0");
+        c.innerHTML = h0;
+    })
+}
 
+function LoadCates1(){
+    fetch("../JSON/NoiDung1.json").then(res => res.json()).then(data => {
+        let h1 ="";
+        for(let p1 of data)
+        h1 += `
+        <div class="a1">
+          <h2>${p1.name}</h2>
+          <p>${p1.text}</p>
+          <div class="ChiTiet">
+             <a href="${p1.link}">${p1.text1}</a>
+          </div>                
+        </div>
+        <div class="a2">
+            <img src="${p1.image1}" alt="ND1">
+        </div>
+        <div class="a3">
+            <img src="${p1.image2}" alt="ND2">
+        </div>
+        `;
+        let c = document.getElementById("noidung1");
+        c.innerHTML = h1;
+    })
+}
 
 function LoadCates2(){
     fetch("../JSON/NoiDung3.json").then(res => res.json()).then(data => {
@@ -132,6 +178,8 @@ function LoadCates3(){
 
 window.onload = function(){
     LoadCates();
+    LoadCates0();
+    LoadCates1();
     LoadCates2();
     LoadCates3();
     let m= document.getElementById("main");
@@ -147,5 +195,28 @@ window.onload = function(){
         m.style.left = "-100%";
     });
 }
+
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i =0; i< reveals.length;i++)
+    {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top; //thông tin kích thước 1 phần tử
+        var revealpoint = 120;
+
+        if(revealtop < windowheight - revealpoint) { //vị trí của phần tử so với viewport nhỏ hơn 120 thì thêm class active
+            reveals[i].classList.add('active');
+        }
+        else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
 
 
