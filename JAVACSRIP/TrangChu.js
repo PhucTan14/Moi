@@ -20,7 +20,7 @@ function prev(){
     var hinh = document.getElementById("hinh");
     hinh.src = arr_hinh[index];
 }
-setInterval("next()",3000);
+setInterval("next()",4500);
 
 //sile hinh thu vien anh
 var arr_chuyenanh=[
