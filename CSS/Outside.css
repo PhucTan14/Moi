@@ -100,6 +100,85 @@ ul.menu>li>a:hover{
 }
 
 /*Phần Nội Dung 3 */
+.foms {
+    z-index: 999;
+    position: relative;
+    position: fixed;
+    top: 55%;
+    left: -100%;
+    box-shadow: 0px 3px 40px #0e0b0b;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #0b5b43;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+}
+.Thoat > i{
+    font-size: 35px;
+    position: absolute;
+    margin: 10px 20px 50px 250px;
+}
+.text1{
+    position: absolute;
+    margin: 10px 50px 60px 80px; 
+}
+#hoTen,#STD{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid gold ;
+}
+.foms > textarea{
+    width: 80%;
+    border: 2px solid gold ;
+}
+#DTA{
+    width: 47%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid gold ;
+    
+}
+#DTB{
+    width: 47%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    border: 2px solid gold ;
+    
+}
+.dauvao{
+    display: inline-block;
+    width: 100%; 
+    display: flex;
+    margin: 0 auto;
+    width: 81%;
+}
+.BaoGia{
+    width: 90%;
+    margin-left: 25px;
+}
+.BaoGia > h4{
+    color: goldenrod; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.BaoGia > p{
+    color: white;
+}
+.BaoGia > p > i{
+    color: red;
+}
+
+.Gui{
+    width: 10%;
+    height: 35px;
+    background-color: rgb(216, 179, 86);
+    color: white;
+}
+
 .c {
     position: relative; 
     color: goldenrod;

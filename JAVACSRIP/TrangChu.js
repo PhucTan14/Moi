@@ -72,8 +72,6 @@ function goToTop() {
     }, 1);
 }
 
-
-
 /*Doc json */
 function LoadCates(){
     fetch("../JSON/NoiDung2.json").then(res => res.json()).then(data => {
@@ -182,6 +180,7 @@ window.onload = function(){
     LoadCates1();
     LoadCates2();
     LoadCates3();
+
     let m= document.getElementById("main");
     let d = document.querySelector(".show-nav");
     d.addEventListener("click",function(){
@@ -194,6 +193,20 @@ window.onload = function(){
         m.style.right = "unset";
         m.style.left = "-100%";
     });
+
+    let v = document.getElementById("ht");
+    let mk = document.querySelector(".click");
+    mk.addEventListener("click",function(){
+        v.style.left = "50%";
+    })
+
+    let t = document.querySelector(".Thoat");
+    t.addEventListener("click",function(){
+        v.style.left = "-100%";
+    })
+
+
+    
 }
 
 
