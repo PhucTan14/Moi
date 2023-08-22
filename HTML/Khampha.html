@@ -6,8 +6,9 @@
     <title>Khám Phá</title>
     <link rel="stylesheet" href="../CSS/Khampha.css">
     <link rel="stylesheet" href="../CSS/mobileKhamPha.css" media="screen and (max-width: 550px)">
+    <script src="../JAVACSRIP/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="/PICTURE/Logo3.png">
+    <link rel="icon" href="../PICTURE/Logo3.png">
 </head>
 <body>
     <div class="loader"></div>
@@ -55,7 +56,7 @@
             <div class="BaoGia">
                 <h4>NHẬN BÁO GIÁ</h4>
                 <p>Xin Chào Dâu Rể! <br> Mình điền thông tin để "NHẬN BÁO GIÁ" Và ưu đãi cho tiệc của mình dâu rể nhé
-                     <i class="fa-solid fa-heart-crack"></i><i class="fa-solid fa-heart-crack"></i></p>
+                     <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i></p>
             </div>
             <input type="text" id="hoTen" name="hoTen" placeholder="Họ và tên của bạn..."><br>
             <input type="text" id="STD" name="hoTen" placeholder="Số Điện Thoại / Zalo..."><br>
@@ -65,8 +66,9 @@
             </div>
             <textarea id="noiDung" name="noiDung" rows="6" placeholder="Nhập nội dung của bạn vào đây"></textarea>
         <br><br>
-        <input type="submit" class="Gui" value="GỬI">
+        <input type="button" id="btn-gui" class="Gui" value="GỬI">
         </div>
+        
         <div class="video reveal">
             <iframe src="https://www.youtube.com/embed/8WCSTtL-uHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
