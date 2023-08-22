@@ -64,8 +64,7 @@ window.onscroll = function () {
 
 function goToTop() {
     var timer = setInterval(function() {
-        document.documentElement.scrollTop-=15;
-
+        document.documentElement.scrollTop-=25;
         if(document.documentElement.scrollTop <= 0) {
             clearInterval(timer);
         }
@@ -230,6 +229,45 @@ function reveal() {
     }
 }
 
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    })
+});
+
+$(document).ready(() => {
+    $("#btn-gui").click(() => {
+        if($("#hoTen").val()=== "") {
+            $("#hoTen").toggleClass("error");
+            return;
+        }
+        if($("#STD").val()=== "") {
+            $("#STD").toggleClass("error");
+            return;
+        }
+        if($("#DTA").val()=== "") {
+            $("#DTA").toggleClass("error");
+            return;
+        }
+        if($("#DTB").val()=== "") {
+            $("#DTB").toggleClass("error");
+            return;
+        }
+        if($("#noiDung").val()=== "") {
+            $("#noiDung").toggleClass("error");
+            return;
+        }
+        if($("#STD").val()!== "" && $("#hoTen").val()!== "" && $("#DTA").val()!== "" && $("#DTB").val()!== "" && $("#noiDung").val()!== "") {
+            alert("Chúng tôi đã nhận được thông tin.");
+            return;
+        }
+    });
+});
 
 
-
+            
+            
+            
