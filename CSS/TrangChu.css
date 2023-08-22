@@ -3,11 +3,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #33CCCC; /* Fallback */
+    background: #cff3f4; /* Fallback */
     animation: color 9s infinite linear;
 } 
 @keyframes color {
-    0%   { background: #beeded; }
+    0%   { background: #cff3f3; }
     20%  { background: #eaefea; }
     40%  { background: #f5f6ef; }
     60%  { background: #cfcfcd; }
